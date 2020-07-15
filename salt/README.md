@@ -1,6 +1,6 @@
 # SaltStack Community Workflow Plug-in Step Package
 
-This package contains a collection of vCommander community workflow plug-in steps for integrating with SaltStack.
+This package contains a collection of Commander community workflow plug-in steps for integrating with SaltStack.
 
 ## Changelog
 
@@ -40,9 +40,9 @@ See [here](https://github.com/Embotics/Scenarios/tree/master/Apply-SaltStack-Sta
 
 ## Installation
 
-Workflow plug-in steps are supported with vCommander release 7.0 and higher. 
+Workflow plug-in steps are supported with Commander release 7.0 and higher. 
 
-See [Adding Workflow Plug-in Steps](http://docs.embotics.com/vCommander/Adding-Plug-In-WF-Steps.htm) in the vCommander documentation to learn how to install this package. 
+See [Adding Workflow Plug-in Steps](https://docs.embotics.com/commander/Using-Plug-In-WF-Steps.htm#Adding) in the Commander documentation to learn how to install this package. 
 
 ## Return codes
 + **0** - *Step completed successfully*
@@ -62,5 +62,5 @@ To change the logging level, add the following named loggers to the Log4j config
 *Example:* `<Logger level="DEBUG" name="wfplugins.saltstack"/>` - Will capture debug messages from both the workflow and client operations.
 
 ## Notes
-* To use this plugin you must have a SaltStack API server visible to the vCommander host
+* To use this plugin you must have a SaltStack API server visible to the Commander host
 * This plugin was tested with the CherryPy-based `salt-api` server. See [here](https://docs.saltstack.com/en/latest/ref/netapi/all/salt.netapi.rest_cherrypy.html) for details.

@@ -1,7 +1,7 @@
 name: Standard Configuration #Optional name for the configuration
 version: v1.0.0 #Optional version for this configuration
 vcommander_version:
-  min: v7.0 #Minimum vCommander version that supports the options in this configuration
+  min: v7.0 #Minimum Commander version that supports the options in this configuration
 infrastructure_context: #Infrastructure related options for this configuration - eg. nodes limits and configuration
   containers_per_cluster:
     max: 300000 #maximum number of containers allowed in the cluster

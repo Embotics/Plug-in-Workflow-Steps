@@ -75,9 +75,9 @@ See the vCenter Client documentation for more information on the Capture Memory 
 
 ## Installation
 
-Plug-in workflow steps are supported with vCommander release 7.0.2 and higher. 
+Plug-in workflow steps are supported with Commander release 7.0.2 and higher. 
 
-See [Adding plug-in workflow steps](http://docs.embotics.com/vCommander/Using-Plug-In-WF-Steps.htm#Adding) in the vCommander documentation to learn how to install this package. 
+See [Adding plug-in workflow steps](https://docs.embotics.com/commander/Using-Plug-In-WF-Steps.htm#Adding) in the Commander documentation to learn how to install this package. 
 
 ## Logging
 To change the logging level, add the following named loggers to the Log4j configuration file located at: 

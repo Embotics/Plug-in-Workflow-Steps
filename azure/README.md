@@ -1,6 +1,6 @@
 # Azure Plug-in Workflow Step Package
 
-This package contains a Commander plug-in workflow step to retrieve the kubeconfig of an AKS Kubernetes cluster created through an Azure template in a vCommander service. 
+This package contains a Commander plug-in workflow step to retrieve the kubeconfig of an AKS Kubernetes cluster created through an Azure template in a Commander service. 
 
 It was designed specifically for use in the scenario *Deploying a Kubernetes Cluster on Azure AKS*, which can be found on the [Embotics Support Knowledge Base](https://support.embotics.com/support/home).
 
@@ -33,7 +33,7 @@ It was designed specifically for use in the scenario *Deploying a Kubernetes Clu
 
 Plug-in workflow steps are supported with Commander release 7.0.2 and higher. 
 
-See [Adding plug-in workflow steps](http://docs.embotics.com/Commander/Using-Plug-In-WF-Steps.htm#Adding) in the Commander documentation to learn how to install this package. 
+See [Adding plug-in workflow steps](https://docs.embotics.com/Commander/Using-Plug-In-WF-Steps.htm#Adding) in the Commander documentation to learn how to install this package. 
 
 ## Return codes
 

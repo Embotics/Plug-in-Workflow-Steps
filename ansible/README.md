@@ -37,7 +37,7 @@ It was designed specifically for use in the Commander workflow extension scenari
 * Step Execution: Drop-down that sets the step execution behavior. By default, steps execute automatically. However, you can set the step to execute only for specific conditions.
 * Timeout: Input field for timeout (in seconds)
 * OS Credentials: Input field for OS credentials required to execute the command on the target VM
-* User Credentials for sudo Password: Enable this checkbox to use the given OS credentials for the sudo privileges that are required when the playbook uses "become". Checking this box enables the --ask-become argument and vCommander will supply the credentials. Unchecked by default.
+* User Credentials for sudo Password: Enable this checkbox to use the given OS credentials for the sudo privileges that are required when the playbook uses "become". Checking this box enables the --ask-become argument and Commander will supply the credentials. Unchecked by default.
 * Playbook URL: Input field for Playbook URL - HTTP(s), file S3 path for playbook (one of URL or YAML must be specified)
 * Playbook YAML: Text Area for Playbook YAML - Inline YAML playbook (one of URL or YAML must be specified)
 * Extra Variables: Text Area for Extra Variables - Set of additional variables as key=value (one per line) or YAML/JSON. If filename, prepend with @.
@@ -46,7 +46,7 @@ It was designed specifically for use in the Commander workflow extension scenari
 
 Plug-in workflow steps are supported with Commander release 7.0.2 and higher. 
 
-See [Adding plug-in workflow steps](http://docs.embotics.com/vCommander/Using-Plug-In-WF-Steps.htm#Adding) in the Commander documentation to learn how to install this package. 
+See [Adding plug-in workflow steps](https://docs.embotics.com/commander/Using-Plug-In-WF-Steps.htm#Adding) in the Commander documentation to learn how to install this package. 
 
 ## Return codes
 

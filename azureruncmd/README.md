@@ -37,7 +37,7 @@ This package contains a Commander workflow plug-in step for running commands on 
 
 Workflow plug-in steps are supported with Commander release 7.0 and higher. 
 
-See [Adding Workflow Plug-in Steps](http://docs.embotics.com/Commander/Adding-Plug-In-WF-Steps.htm) in the Commander documentation to learn how to install this package. 
+See [Adding Workflow Plug-in Steps](https://docs.embotics.com/Commander/Using-Plug-In-WF-Steps.htm#Adding) in the Commander documentation to learn how to install this package. 
 
 ## Return codes
 

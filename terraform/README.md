@@ -1,6 +1,6 @@
 # Terraform Workflow Plug-in Step Package
 
-This package contains a collection of vCommander workflow plug-in steps for working with [Terraform](https://www.terraform.io/) configurations. 
+This package contains a collection of Commander workflow plug-in steps for working with [Terraform](https://www.terraform.io/) configurations. 
 
 It was designed specifically for use in the *Deploying User Provided Terraform Configurations* & *Deploying Terraform Configurations* scenarios.
 
@@ -45,7 +45,7 @@ It was designed specifically for use in the *Deploying User Provided Terraform C
 * Plan ID: (Optional) Input field for the name of the directory that contains the state files.  If left blank, the step defaults to `#{request.id}`.
 * Terraform Binary: (Optional)  Input field for the path to the terraform binary on the terraform host. If left blank, the step defaults to `terraform`.
 * Configuration: Input field for Terraform configuration, as a substitution variable
-* Inject Tags: Checkbox to indicate if vCommander metadata (ownership & organization) should be injected   
+* Inject Tags: Checkbox to indicate if Commander metadata (ownership & organization) should be injected   
 * Variables: Input field for Terraform variables as key=value pairs, separated by space or new line. Optional
 
 ### Apply Terraform Plan
@@ -76,7 +76,7 @@ It was designed specifically for use in the *Deploying User Provided Terraform C
 * Working Directory: (Optional) Input field to specify the working directory on the terraform host for the state files. If left blank, the step defaults to `/tmp/embotics-terraform`.
 * Plan ID: (Optional) Input field to specify the name of the directory that contains the state files. If left blank, the step defaults to `#{request.id}`.
 * Terraform Binary: (Optional) Input field to specify the path to the Terraform binary on the Terraform host. If left blank, the step defaults to `terraform`.
-* Inject Tags: Checkbox to indicate if vCommander metadata (ownership & organization) should be injected
+* Inject Tags: Checkbox to indicate if Commander metadata (ownership & organization) should be injected
 * Configuration: Input field for Terraform configuration as a substitution variable
 * Variables: (Optional) Input field for Terraform variables as key=value pairs, separated by space or new line.
 
@@ -105,9 +105,9 @@ It was designed specifically for use in the *Deploying User Provided Terraform C
 
 ## Installation
 
-Workflow plug-in steps are supported with vCommander release 7.0.2 and higher. 
+Workflow plug-in steps are supported with Commander release 7.0.2 and higher. 
 
-See [Adding Workflow Plug-in Steps](http://docs.embotics.com/vCommander/Adding-Plug-In-WF-Steps.htm) in the vCommander documentation to learn how to install this package. 
+See [Adding Workflow Plug-in Steps](https://docs.embotics.com/commander/Using-Plug-In-WF-Steps.htm#Adding) in the Commander documentation to learn how to install this package. 
 
 ## Return codes
 

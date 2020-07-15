@@ -2,7 +2,7 @@
 
 This package contains a collection of plug-in workflow steps to manipulate text input.
 
-It can be used in vCommander workflow extension scenarios such as *Running a Kubernetes Best Practices Report*, which can be found on the [Embotics Support Knowledge Base](https://support.embotics.com/support/home). It can also be used outside of vCommander scenarios.
+It can be used in Commander workflow extension scenarios such as *Running a Kubernetes Best Practices Report*, which can be found on the [Embotics Support Knowledge Base](https://support.embotics.com/support/home). It can also be used outside of Commander scenarios.
 
 ## Changelog
 
@@ -25,7 +25,7 @@ It can be used in vCommander workflow extension scenarios such as *Running a Kub
 
 ### Text Input/Output 
 
-**Purpose:** Creates structured text such as JSON, YAML or XML from the vCommander workflow or service request context, using variable substitution from the given input and stores it as the step's output variable.
+**Purpose:** Creates structured text such as JSON, YAML or XML from the Commander workflow or service request context, using variable substitution from the given input and stores it as the step's output variable.
 
 **Details:** Use this step to create JSON or XML as a workflow module's output, or to store text data as part of a workflow definition.
 
@@ -41,7 +41,7 @@ It can be used in vCommander workflow extension scenarios such as *Running a Kub
 
 ### JsonPath Extract
 
-**Purpose:** Extracts text from the provided input using json-path, returning the first matched text as the vCommander variable `#{steps['Step Name'].output}`.
+**Purpose:** Extracts text from the provided input using json-path, returning the first matched text as the Commander variable `#{steps['Step Name'].output}`.
 
 **Details:** See also: http://goessner.net/articles/JsonPath/
 
@@ -166,9 +166,9 @@ It can be used in vCommander workflow extension scenarios such as *Running a Kub
 
 ## Installation
 
-Plug-in workflow steps are supported with vCommander release 7.0.2 and higher. 
+Plug-in workflow steps are supported with Commander release 7.0.2 and higher. 
 
-See [Adding plug-in workflow steps](http://docs.embotics.com/vCommander/Using-Plug-In-WF-Steps.htm#Adding) in the vCommander documentation to learn how to install this package. 
+See [Adding plug-in workflow steps](http://docs.embotics.com/commander/Using-Plug-In-WF-Steps.htm#Adding) in the Commander documentation to learn how to install this package. 
 
 ## Return codes
 
