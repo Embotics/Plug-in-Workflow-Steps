@@ -31,9 +31,9 @@ It was designed specifically for use in *Pause & Resume*.
 
 ## Installation
 
-Workflow plug-in steps are supported with vCommander release 7.0 and higher. 
+Workflow plug-in steps are supported with Commander release 7.0 and higher. 
 
-See [Adding Workflow Plug-in Steps](http://docs.embotics.com/vCommander/Adding-Plug-In-WF-Steps.htm) in the vCommander documentation to learn how to install this package. 
+See [Adding Workflow Plug-in Steps](https://docs.embotics.com/commander/Using-Plug-In-WF-Steps.htm#Adding) in the Commander documentation to learn how to install this package. 
 
 ## Return codes
 

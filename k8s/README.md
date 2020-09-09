@@ -1,11 +1,11 @@
 # Kubernetes Plug-in Workflow Step Package
 
-This package contains a collection of vCommander plug-in workflow steps for interacting with Kubernetes resources. It was designed specifically for use in several Kubernetes scenarios, such as running a Kubernetes best practice report, which can be found on the [Embotics Support Knowledge Base](https://support.embotics.com/support/home).
+This package contains a collection of Commander plug-in workflow steps for interacting with Kubernetes resources. It was designed specifically for use in several Kubernetes scenarios, such as running a Kubernetes best practice report, which can be found on the [Embotics Support Knowledge Base](https://support.embotics.com/support/home).
 
 ## Changelog
 
-- **Version 2.0:** Updated underlying Kubernetes library requiring updates to resource API paths. The Version 2.0 plug-in is supported with vCommander release 7.1.0 and higher.
-- **Version 1.0:** Initial version. The Version 1.0 plug-in is supported with vCommander release 7.0.2 and higher.
+- **Version 2.0:** Updated underlying Kubernetes library requiring updates to resource API paths. The Version 2.0 plug-in is supported with Commander release 7.1.0 and higher.
+- **Version 1.0:** Initial version. The Version 1.0 plug-in is supported with Commander release 7.0.2 and higher.
 
 ## Plug-in steps in this package
 
@@ -18,7 +18,7 @@ This package contains a collection of vCommander plug-in workflow steps for inte
 
 **Details:**
 
-- Adds a Kubernetes cluster as a vCommander managed system
+- Adds a Kubernetes cluster as a Commander managed system
 - Supported in completion and command workflows
 
 **Workflows supporting this plug-in step:**
@@ -33,10 +33,10 @@ This package contains a collection of vCommander plug-in workflow steps for inte
 
 - Step Name: Input field for the name of the step
 - Step Execution: Drop-down that sets the step execution behavior. By default, steps execute automatically. However, you can set the step to execute only for specific conditions.
-- Cluster Name: Input field for the name of the cluster. This is the friendly managed system name in vCommander.
+- Cluster Name: Input field for the name of the cluster. This is the friendly managed system name in Commander.
 - Cluster Config: Input field for the cluster configuration in kubeconfig format
   - This field can contain a variable that resolves to the kubeconfig
-  - If this field contains a file path that is accessible to the vCommander service account, the file is read, and its contents are used as the kubeconfig
+  - If this field contains a file path that is accessible to the Commander service account, the file is read, and its contents are used as the kubeconfig
 
 ### Kubernetes Best Practices 
 
@@ -122,7 +122,7 @@ This package contains a collection of vCommander plug-in workflow steps for inte
 
 ## Installation
 
-See [Adding plug-in workflow steps](http://docs.embotics.com/vCommander/Using-Plug-In-WF-Steps.htm#Adding) in the vCommander documentation to learn how to install this package. 
+See [Adding plug-in workflow steps](https://docs.embotics.com/commander/Using-Plug-In-WF-Steps.htm#Adding) in the Commander documentation to learn how to install this package. 
 
 ## Return codes
 
@@ -176,6 +176,6 @@ To change the logging level, add the following named loggers to the Log4j config
 ## Notes
 
 - Selecting the "Update" deploy type for a namespace manifest will fail with the following error: *"Message: The namespace of the object (default) does not match the namespace on the request"*. If updating a namespace is required, use the "Create or update" deploy type.
-- Updates to a Kubernetes cluster may not appear immediately after the step's completion because some time is allowed for the polling cycle to reset. To ensure the latest data appears in vCommander, manually synchronize the managed system's inventory.
+- Updates to a Kubernetes cluster may not appear immediately after the step's completion because some time is allowed for the polling cycle to reset. To ensure the latest data appears in Commander, manually synchronize the managed system's inventory.
 - The Deploy/Remove Resource steps do not provide support for all Kubernetes resources. For example, the ClusterRoleBinding resource should be pre-deployed on the Kubernetes cluster to be used in an resource.
 - The Deploy/Remove Resource steps do not support all API versions.  Some support is included for the "apps" endpoint for Deployments where the API version is automatically changed to the supported "extensions/v1beta1" endpoint.

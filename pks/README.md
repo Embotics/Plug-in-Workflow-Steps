@@ -2,15 +2,15 @@
 
 This package contains a collection of workflow steps for interacting with Pivotal Container Service (PKS) on vSphere.
 
-It was designed specifically for use in the vCommander workflow extension scenario *Deploying a Kubernetes Cluster on vSphere through PKS*, which can be found on the [Embotics Support Knowledge Base](https://support.embotics.com/support/home).
+It was designed specifically for use in the Commander workflow extension scenario *Deploying a Kubernetes Cluster on vSphere through PKS*, which can be found on the [Embotics Support Knowledge Base](https://support.embotics.com/support/home).
 
 ## Changelog
 
-- **Version 2.0:** Updated underlying Kubernetes library requiring updates to resource API paths. The Version 2.0 plug-in is supported with vCommander release 7.1.0 and higher.
+- **Version 2.0:** Updated underlying Kubernetes library requiring updates to resource API paths. The Version 2.0 plug-in is supported with Commander release 7.1.0 and higher.
 - **Version 1.1:** 
   - Added List PKS Kubernetes Clusters step and Delete PKS Kubernetes Cluster step. 
   - Added extra error handling and logging.
-  - The Version 1.1 and 1.0 plug-ins are supported with vCommander release 7.0.2 and higher.
+  - The Version 1.1 and 1.0 plug-ins are supported with Commander release 7.0.2 and higher.
 - **Version 1.0:** Initial version.
 
 ## Plug-in steps in this package
@@ -35,7 +35,7 @@ It was designed specifically for use in the vCommander workflow extension scenar
 
 * Step Name: Input field for the name of the step.
 * Step Execution: Drop-down that sets the step execution behavior. By default, steps execute automatically. However, you can set the step to execute only for specific conditions.
-* Cluster Name: Input field for the name of the cluster. This is the friendly, managed system name in displayed in vCommander.
+* Cluster Name: Input field for the name of the cluster. This is the friendly, managed system name in displayed in Commander.
 * PKS API Server: Input field for the address of the load balancer for the PKS API and UAA server. This must be an FQDN
 * Sys Credentials: Drop-down that sets the system credentials for the PKS API server.
 * Plan Name: Input field for the plan name to use to create a PKS k8s cluster.
@@ -60,13 +60,13 @@ It was designed specifically for use in the vCommander workflow extension scenar
 
 * Step Name: Input field for the name of the step
 * Step Execution: Drop-down that sets the step execution behavior. By default, steps execute automatically. However, you can set the step to execute only for specific conditions.
-* Cluster Name: Input field for the name of the cluster. This is the friendly, managed system name in displayed in vCommander.
+* Cluster Name: Input field for the name of the cluster. This is the friendly, managed system name in displayed in Commander.
 * PKS API Server: Input field for the address of the load balancer for the PKS API and UAA server. This must be an FQDN.
 * Sys Credentials: Drop-down that sets the system credentials for the PKS API server
 
 ### Get PKS Kube Config
 
-**Purpose:** Requests credentials (that is, kubeconfig) from PKS to be used to add the cluster to vCommander
+**Purpose:** Requests credentials (that is, kubeconfig) from PKS to be used to add the cluster to Commander
 
 **Workflows supporting this plug-in step:**
 
@@ -80,7 +80,7 @@ It was designed specifically for use in the vCommander workflow extension scenar
 
 * Step Name: Input field for the name of the step
 * Step Execution: Drop-down that sets the step execution behavior. By default, steps execute automatically. However, you can set the step to execute only for specific conditions.
-* Cluster Name: Input field for the name of the cluster. This is the friendly, managed system name in displayed in vCommander.
+* Cluster Name: Input field for the name of the cluster. This is the friendly, managed system name in displayed in Commander.
 * PKS API Server: Input field for the address of the load balancer for the PKS API and UAA server. This must be an FQDN.
 * Sys Credentials: Drop-down that sets the system credentials for the PKS API server
 
@@ -96,19 +96,19 @@ It was designed specifically for use in the vCommander workflow extension scenar
 
 * Step Name: Input field for the name of the step
 * Step Execution: Drop-down that sets the step execution behavior. By default, steps execute automatically. However, you can set the step to execute only for specific conditions.
-* Cluster Name: (Optional) Input field for the name of the cluster. This is the friendly, managed system name in displayed in vCommander. If left blank, all PKS clusters will be returned.
+* Cluster Name: (Optional) Input field for the name of the cluster. This is the friendly, managed system name in displayed in Commander. If left blank, all PKS clusters will be returned.
 * PKS API Server: Input field for the address of the load balancer for the PKS API and UAA server. This must be an FQDN.
 * Sys Credentials: Drop-down that sets the system credentials for the PKS API server
 
 ## Installation
 
-See [Adding plug-in workflow steps](http://docs.embotics.com/vCommander/Using-Plug-In-WF-Steps.htm#Adding) in the vCommander documentation to learn how to install this package. 
+See [Adding plug-in workflow steps](https://docs.embotics.com/commander/Using-Plug-In-WF-Steps.htm#Adding) in the Commander documentation to learn how to install this package. 
 
 ## Return Codes
 
 ### Generic Return Codes
 + **0** - *Step completed successfully*
-+ **100** - *vCommander returned a general exception*
++ **100** - *Commander returned a general exception*
 
 ### Create PKS Kubernetes cluster return codes
 + **1** - *PKS Credentials were not valid*
@@ -129,7 +129,7 @@ See [Adding plug-in workflow steps](http://docs.embotics.com/vCommander/Using-Pl
 - **5** - *Delete cluster failed*
 
 ## Logging
-Add the following named loggers to the Log4j configuration file located in `\Embotics\vCommander\tomcat\common\classes\log4j2.xml` to update the logging level.
+Add the following named loggers to the Log4j configuration file located in `\Embotics\Commander\tomcat\common\classes\log4j2.xml` to update the logging level.
 + **Create PKS Kubernetes cluster**
     + Loggers:
       + `<Logger level="DEBUG" name="wfplugins.pks.createk8scluster"/>`

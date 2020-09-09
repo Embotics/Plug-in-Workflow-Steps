@@ -1,6 +1,6 @@
 # Jenkins Plug-in Workflow Step Package
 
-This package contains a vCommander plug-in workflow step that you can use to trigger a Jenkins job from vCommander. 
+This package contains a Commander plug-in workflow step that you can use to trigger a Jenkins job from Commander. 
 
 ## Changelog
 
@@ -29,9 +29,9 @@ This package contains a vCommander plug-in workflow step that you can use to tri
 
 ## Installation
 
-Plug-in workflow steps are supported with vCommander release 7.0.2 and higher. 
+Plug-in workflow steps are supported with Commander release 7.0.2 and higher. 
 
-See [Adding plug-in workflow steps](http://docs.embotics.com/vCommander/Using-Plug-In-WF-Steps.htm#Adding) in the vCommander documentation to learn how to install this package. 
+See [Adding plug-in workflow steps](https://docs.embotics.com/commander/Using-Plug-In-WF-Steps.htm#Adding) in the Commander documentation to learn how to install this package. 
 
 ## Return codes
 
