@@ -5,6 +5,7 @@ This package contains a Commander plug-in workflow step that you can use to trig
 ## Changelog
 
 **Version 1.0:** Initial version.
+Version 2.2: Enabled CSRF and Wait for completion
 
 ## Plug-in steps in this package
 + Jenkins
