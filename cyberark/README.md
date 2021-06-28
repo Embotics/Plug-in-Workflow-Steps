@@ -26,23 +26,31 @@ It can be used with several Commander workflow extension scenarios, which can be
 
 * Step Name: Input field for the name of the step
 * Step Execution: Drop-down that sets the step execution behavior. By default, steps execute automatically. However, you can set the step to execute only for specific conditions.
-* To: Input field for the "To" recipients. Single email address or semi-colon-separated list of addresses. 
-* CC: (Optional) Input field for the "CC" recipients. Single email address or or semi-colon-separated list of addresses.
-* Subject: Input field for the email subject
-* Body: Text area for the email body
-* Attachment: (Optional) Input field for the attachment. Can be a file accessible to the Commander service account, in-line content, or a variable that resolves to a file or the attachment content.
-* Content Type: (Optional) Input field for the attachment content type. Required if attachment is specified. For valid options, see https://www.iana.org/assignments/media-types/media-types.xhtml.
+* CyberArk server address: Input field for the DNS address of the CyberArk Server. 
+* Sys Credentials: Input field for the credentials used to Query the CyberArk Server for VM and Instance Credentials
+* Ingnore CyberArk Certificate: Check Box to Ignore an Unsigned CyberArk Server Instance in a Dev/Test Scenario
+* Authentication Type: Dropdown Input Field to indicate the type of Credential being used to access the CyberArk Server
+* Search Name: Input Field for the DNS or Container Name of the target VM or Instance used for lookup in the CyberArk Server.
+
+* SSH Address: Input field for a reachable Address or DNS name of the Target VM or Instance workload
+* SSH Port: Input Field Port used for SSH, Typically port 22. If required an alternate could be set. 
+* Command Elevation: Dropdown Input Field, to select Elevation if it's required on the target VM or Instance with the queried credential type. 
+* Command Line: Input text field for the Command to run against the Target VM or Instance. 
 
 **CyberArk WinRM Inputs:**
 
 * Step Name: Input field for the name of the step
 * Step Execution: Drop-down that sets the step execution behavior. By default, steps execute automatically. However, you can set the step to execute only for specific conditions.
-* To: Input field for the "To" recipients. Single email address or semi-colon-separated list of addresses. 
-* CC: (Optional) Input field for the "CC" recipients. Single email address or or semi-colon-separated list of addresses.
-* Subject: Input field for the email subject
-* Body: Text area for the email body
-* Attachment: (Optional) Input field for the attachment. Can be a file accessible to the Commander service account, in-line content, or a variable that resolves to a file or the attachment content.
-* Content Type: (Optional) Input field for the attachment content type. Required if attachment is specified. For valid options, see https://www.iana.org/assignments/media-types/media-types.xhtml.
+* CyberArk server address: Input field for the DNS address of the CyberArk Server. 
+* Sys Credentials: Input field for the credentials used to Query the CyberArk Server for VM and Instance Credentials
+* Ingnore CyberArk Certificate: Check Box to Ignore an Unsigned CyberArk Server Instance in a Dev/Test Scenario
+* Authentication Type: Dropdown Input Field to indicate the type of Credential being used to access the CyberArk Server
+* Search Name: Input Field for the DNS or Container Name of the target VM or Instance used for lookup in the CyberArk Server.
+
+* WinRM Address: Input field for a reachable Address or DNS name of the Target VM or Instance workload
+* WinRM Port: Input Field Port used for WinRM, Typically port 5985 or 5986. If required an alternate could be set. 
+* Command Elevation: Dropdown Input Field, to select the WinRM Authentication type as required on the target VM or Instance with the queried credential type. 
+* Command Line: Input text field for the Command to run against the Target VM or Instance. 
 
 ## Installation
 
@@ -51,8 +59,6 @@ Plug-in workflow steps are supported with Commander release 8.7 and higher.
 See [Adding plug-in workflow steps](https://docs.embotics.com/Commander/Using-Plug-In-WF-Steps.htm#Adding) in the Commander documentation to learn how to install this package. 
 
 ## Return codes
-
-### Generic return codes
 + **0** - *Step completed successfully*
 
 
