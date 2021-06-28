@@ -1,8 +1,8 @@
 # CyberArk Plug-in Workflow Step Package
 
-This package contains a Commander plug-in workflow step for using CyberArk Credentials for SSH and WinRM commands to a target VM/Instance.
+This package contains a Commander plug-in workflow step for Querying a CyberArk server for rotating credentials. The Queried credentials are then used with SSH or WinRM commands against a target VM/Instance.
 
-It can be used with several Commander workflow extension scenarios, which can be found on the [Embotics Support Knowledge Base](https://support.embotics.com/support/home). It can also be used outside of Commander scenarios.
+It can be used with several Commander workflow extension scenarios, which can be found on the [Snow Software Support Knowledge Base](https://community.snowsoftware.com). It can also be used outside of Commander scenarios.
 
 ## Changelog
 
