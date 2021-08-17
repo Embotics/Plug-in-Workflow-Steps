@@ -6,6 +6,7 @@ It can be used with several Commander workflow extension scenarios, which can be
 
 ## Changelog
 
+**Version 1.2:** Adittional Debug and ability to auto populate a reason.
 **Version 1.1:** Addition of WinRM support.
 **Version 1.0:** Initial version.
 
@@ -31,6 +32,7 @@ It can be used with several Commander workflow extension scenarios, which can be
 * Ingnore CyberArk Certificate: Check Box to Ignore an Unsigned CyberArk Server Instance in a Dev/Test Scenario
 * Authentication Type: Dropdown Input Field to indicate the type of Credential being used to access the CyberArk Server
 * Search Name: Input Field for the DNS or Container Name of the target VM or Instance used for lookup in the CyberArk Server.
+* Auto Submit Reason: This injects a message(Snow Commander Request)into the password request body if your system is setup to require it. 
 
 * SSH Address: Input field for a reachable Address or DNS name of the Target VM or Instance workload
 * SSH Port: Input Field Port used for SSH, Typically port 22. If required an alternate could be set. 
@@ -46,6 +48,7 @@ It can be used with several Commander workflow extension scenarios, which can be
 * Ingnore CyberArk Certificate: Check Box to Ignore an Unsigned CyberArk Server Instance in a Dev/Test Scenario
 * Authentication Type: Dropdown Input Field to indicate the type of Credential being used to access the CyberArk Server
 * Search Name: Input Field for the DNS or Container Name of the target VM or Instance used for lookup in the CyberArk Server.
+* Auto Submit Reason: This injects a message(Snow Commander Request)into the password request body if your system is setup to require it.
 
 * WinRM Address: Input field for a reachable Address or DNS name of the Target VM or Instance workload
 * WinRM Port: Input Field Port used for WinRM, Typically port 5985 or 5986. If required an alternate could be set. 
