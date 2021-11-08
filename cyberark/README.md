@@ -6,6 +6,7 @@ It can be used with several Commander workflow extension scenarios, which can be
 
 ## Changelog
 
+**Version 1.2:** Adittional Debug for WinRM.
 **Version 1.2:** Adittional Debug and ability to auto populate a reason.
 **Version 1.1:** Addition of WinRM support.
 **Version 1.0:** Initial version.
